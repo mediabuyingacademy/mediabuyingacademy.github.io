@@ -38,6 +38,21 @@ html, body, #root {
 }
 .cta-pulse { animation: ctaPulse 2.4s ease-in-out infinite; }
 
+@keyframes ctaPulseStrong {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(46,163,255,0.7), 0 14px 50px -10px rgba(46,163,255,0.7), 0 0 60px rgba(255,179,71,0.15);
+  }
+  50% {
+    transform: scale(1.07);
+    box-shadow: 0 0 0 26px rgba(46,163,255,0), 0 24px 70px -8px rgba(46,163,255,0.9), 0 0 90px rgba(255,179,71,0.35);
+  }
+}
+.lg\:cta-pulse-strong { animation: ctaPulse 2.4s ease-in-out infinite; }
+@media (min-width: 1024px) {
+  .lg\:cta-pulse-strong { animation: ctaPulseStrong 1.8s ease-in-out infinite; }
+}
+
 .cta-sheen {
   position: absolute; inset: 0; overflow: hidden; border-radius: inherit; pointer-events: none;
 }

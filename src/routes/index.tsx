@@ -212,10 +212,10 @@ function Prelander() {
         <img
           src={khalidAsset.url}
           alt=""
-          className="portrait-fade absolute -right-10 top-6 h-[58%] w-auto object-contain opacity-90"
+          className="portrait-fade absolute left-1/2 top-2 h-[48%] w-auto -translate-x-1/2 object-contain opacity-90"
           style={{ filter: "drop-shadow(0 20px 40px rgba(46,163,255,0.18))" }}
         />
-        <div className="absolute inset-x-0 bottom-0 h-[55%] bg-gradient-to-t from-[#071426] via-[#071426]/85 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-[58%] bg-gradient-to-t from-[#071426] via-[#071426]/95 to-transparent" />
       </div>
 
       {/* Header */}
@@ -232,7 +232,7 @@ function Prelander() {
       </header>
 
       {/* Main content */}
-      <main className="relative z-10 mx-auto flex h-full max-w-7xl flex-col justify-center px-5 pt-20 pb-6 sm:px-8 lg:pt-0">
+      <main className="relative z-10 mx-auto flex h-full max-w-7xl flex-col justify-end px-5 pb-8 pt-24 text-center sm:px-8 lg:justify-center lg:pb-6 lg:pt-0 lg:text-left">
         <div className="lg:max-w-[58%]">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 rounded-full border border-[#2EA3FF55] bg-[#2EA3FF]/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#5BC0FF] backdrop-blur-md sm:text-xs">
@@ -252,7 +252,7 @@ function Prelander() {
           </h1>
 
           {/* Subtitle */}
-          <p className={`mt-3 max-w-2xl text-[0.92rem] leading-relaxed text-[#AAB7C8] sm:mt-4 sm:text-base ${isAr ? "lg:text-lg" : ""}`}>
+          <p className={`mx-auto mt-3 max-w-2xl text-[0.95rem] font-bold leading-relaxed text-white sm:mt-4 sm:text-base lg:mx-0 lg:font-normal lg:text-[#AAB7C8] ${isAr ? "lg:text-lg" : ""}`}>
             {c.subtitle}
           </p>
 
@@ -262,7 +262,7 @@ function Prelander() {
           </p>
 
           {/* Chips */}
-          <div className="mt-4 flex flex-wrap gap-2 sm:mt-5">
+          <div className="mt-4 flex flex-wrap justify-center gap-2 sm:mt-5 lg:justify-start">
             {c.chips.map((chip) => (
               <span
                 key={chip}
@@ -274,18 +274,18 @@ function Prelander() {
           </div>
 
           {/* CTA + price */}
-          <div className="mt-5 sm:mt-7">
+          <div className="mt-5 flex flex-col items-center sm:mt-7 lg:items-center">
             <a
               href={OFFICIAL_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="cta-btn group cta-pulse relative inline-flex w-full items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-r from-[#2EA3FF] via-[#3DB2FF] to-[#5BC0FF] px-6 py-4 text-base font-bold text-white sm:w-auto sm:px-9 sm:py-5 sm:text-lg"
+              className="cta-btn group cta-pulse lg:cta-pulse-strong relative inline-flex w-full items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-r from-[#2EA3FF] via-[#3DB2FF] to-[#5BC0FF] px-6 py-4 text-base font-bold text-white sm:w-auto sm:px-9 sm:py-5 sm:text-lg lg:px-14 lg:py-7 lg:text-2xl lg:tracking-[0.12em] lg:text-[#FFB347]"
               style={{ boxShadow: "0 10px 40px -10px rgba(46,163,255,0.6)" }}
             >
-              <span className="relative z-10 flex items-center gap-2">
+              <span className="relative z-10 flex items-center gap-2 lg:gap-4">
                 {c.cta}
                 <svg
-                  className={`h-5 w-5 transition-transform group-hover:translate-x-1 ${isAr ? "rotate-180" : ""}`}
+                  className={`h-5 w-5 transition-transform group-hover:translate-x-1 lg:h-7 lg:w-7 ${isAr ? "rotate-180" : ""}`}
                   viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
                 >
                   <path d="M5 12h14M13 5l7 7-7 7" />
@@ -294,7 +294,7 @@ function Prelander() {
               <span className="cta-sheen" />
             </a>
 
-            <div className="mt-3 flex flex-wrap items-baseline gap-2">
+            <div className="mt-3 flex flex-wrap items-baseline justify-center gap-2">
               <span className="text-xs font-semibold uppercase tracking-wider text-[#5BC0FF]">{c.priceLabel}</span>
               <span className="text-2xl font-black text-white sm:text-3xl">{c.priceNow}</span>
               <span className="text-xs text-[#AAB7C8]">{c.priceFiller}</span>

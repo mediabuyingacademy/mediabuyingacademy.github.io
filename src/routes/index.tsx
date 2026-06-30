@@ -20,7 +20,7 @@ type Lang = "fr" | "ar";
 const COPY = {
   fr: {
     dir: "ltr",
-    badge: "Formation Blogging PRO · 45 jours",
+    badge: ". FORMATION BLOGGING PRO ·\\n.. 45 JOURS ..",
     title: (
       <>
         Construire un blog <span className="text-[#5BC0FF]">monétisable</span> avec l'<span className="text-[#2EA3FF]">Ad Arbitrage</span>

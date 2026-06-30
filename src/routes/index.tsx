@@ -20,7 +20,7 @@ type Lang = "fr" | "ar";
 const COPY = {
   fr: {
     dir: "ltr",
-    badge: "Formation Blogging PRO · 45 jours",
+    badge: ". FORMATION BLOGGING PRO ·\\n.. 45 JOURS ..",
     title: (
       <>
         Construire un blog <span className="text-[#5BC0FF]">monétisable</span> avec l'<span className="text-[#2EA3FF]">Ad Arbitrage</span>
@@ -237,7 +237,7 @@ function Prelander() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 rounded-full border border-[#2EA3FF55] bg-[#2EA3FF]/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#5BC0FF] backdrop-blur-md sm:text-xs">
             <span className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-[#5BC0FF] shadow-[0_0_10px_#5BC0FF]" />
-            {c.badge}
+            <span className="whitespace-pre-line">{c.badge}</span>
           </div>
 
           {/* Title */}

@@ -237,7 +237,7 @@ function Prelander() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 rounded-full border border-[#2EA3FF55] bg-[#2EA3FF]/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#5BC0FF] backdrop-blur-md sm:text-xs">
             <span className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-[#5BC0FF] shadow-[0_0_10px_#5BC0FF]" />
-            {c.badge}
+            <span className="whitespace-pre-line">{c.badge}</span>
           </div>
 
           {/* Title */}

@@ -250,7 +250,7 @@ function Prelander() {
           </h1>
 
           {/* Subtitle */}
-          <p className={`mx-auto mt-3 max-w-2xl text-[0.95rem] font-bold leading-relaxed text-white sm:mt-4 sm:text-base lg:mx-0 lg:font-normal lg:text-[#AAB7C8] ${isAr ? "lg:text-lg" : ""}`}>
+          <p className={`mx-auto mt-3 max-w-2xl text-[0.95rem] font-bold leading-relaxed text-white sm:mt-4 sm:text-base lg:mx-0 lg:text-lg`}>
             {c.subtitle}
           </p>
 

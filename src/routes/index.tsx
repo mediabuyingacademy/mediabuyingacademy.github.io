@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import khalidAsset from "@/assets/khalid.png.asset.json";
-import logoAsset from "@/assets/mb-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -219,8 +218,7 @@ function Prelander() {
       </div>
 
       {/* Header */}
-      <header className="absolute inset-x-0 top-0 z-20 flex items-center justify-between px-4 pt-4 sm:px-8 sm:pt-6">
-        <img src={logoAsset.url} alt="Media Buying Academy" className="h-8 w-auto sm:h-10" />
+      <header className="absolute inset-x-0 top-0 z-20 flex items-center justify-end px-4 pt-4 sm:px-8 sm:pt-6">
         <button
           onClick={() => setLang(lang === "fr" ? "ar" : "fr")}
           className="group relative rounded-full border border-[#2EA3FF55] bg-white/5 px-4 py-1.5 text-xs font-semibold tracking-wider text-white backdrop-blur-md transition hover:border-[#5BC0FF] hover:bg-[#2EA3FF]/15 sm:text-sm"
@@ -279,7 +277,7 @@ function Prelander() {
               href={OFFICIAL_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="cta-btn group cta-pulse lg:cta-pulse-strong relative inline-flex w-full items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-r from-[#2EA3FF] via-[#3DB2FF] to-[#5BC0FF] px-6 py-4 text-base font-bold text-white sm:w-auto sm:px-9 sm:py-5 sm:text-lg lg:px-14 lg:py-7 lg:text-2xl lg:tracking-[0.12em] lg:text-[#FFB347]"
+              className="cta-btn group cta-pulse lg:cta-pulse-strong relative inline-flex w-full items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-r from-[#2EA3FF] via-[#3DB2FF] to-[#5BC0FF] px-6 py-4 text-base font-bold text-white sm:w-auto sm:px-9 sm:py-5 sm:text-lg lg:px-14 lg:py-7 lg:text-2xl lg:tracking-[0.12em] lg:font-black lg:text-black"
               style={{ boxShadow: "0 10px 40px -10px rgba(46,163,255,0.6)" }}
             >
               <span className="relative z-10 flex items-center gap-2 lg:gap-4">

@@ -219,8 +219,7 @@ function Prelander() {
       </div>
 
       {/* Header */}
-      <header className="absolute inset-x-0 top-0 z-20 flex items-center justify-between px-4 pt-4 sm:px-8 sm:pt-6">
-        <img src={logoAsset.url} alt="Media Buying Academy" className="h-8 w-auto sm:h-10" />
+      <header className="absolute inset-x-0 top-0 z-20 flex items-center justify-end px-4 pt-4 sm:px-8 sm:pt-6">
         <button
           onClick={() => setLang(lang === "fr" ? "ar" : "fr")}
           className="group relative rounded-full border border-[#2EA3FF55] bg-white/5 px-4 py-1.5 text-xs font-semibold tracking-wider text-white backdrop-blur-md transition hover:border-[#5BC0FF] hover:bg-[#2EA3FF]/15 sm:text-sm"

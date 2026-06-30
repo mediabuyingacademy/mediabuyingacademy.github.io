@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import khalidAsset from "@/assets/khalid.png.asset.json";
-import logoAsset from "@/assets/mb-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -278,7 +277,7 @@ function Prelander() {
               href={OFFICIAL_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="cta-btn group cta-pulse lg:cta-pulse-strong relative inline-flex w-full items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-r from-[#2EA3FF] via-[#3DB2FF] to-[#5BC0FF] px-6 py-4 text-base font-bold text-white sm:w-auto sm:px-9 sm:py-5 sm:text-lg lg:px-14 lg:py-7 lg:text-2xl lg:tracking-[0.12em] lg:text-[#FFB347]"
+              className="cta-btn group cta-pulse lg:cta-pulse-strong relative inline-flex w-full items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-r from-[#2EA3FF] via-[#3DB2FF] to-[#5BC0FF] px-6 py-4 text-base font-bold text-white sm:w-auto sm:px-9 sm:py-5 sm:text-lg lg:px-14 lg:py-7 lg:text-2xl lg:tracking-[0.12em] lg:font-black lg:text-black"
               style={{ boxShadow: "0 10px 40px -10px rgba(46,163,255,0.6)" }}
             >
               <span className="relative z-10 flex items-center gap-2 lg:gap-4">

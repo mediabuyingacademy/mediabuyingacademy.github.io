@@ -212,10 +212,10 @@ function Prelander() {
         <img
           src={khalidAsset.url}
           alt=""
-          className="portrait-fade absolute -right-10 top-6 h-[58%] w-auto object-contain opacity-90"
+          className="portrait-fade absolute left-1/2 top-2 h-[48%] w-auto -translate-x-1/2 object-contain opacity-90"
           style={{ filter: "drop-shadow(0 20px 40px rgba(46,163,255,0.18))" }}
         />
-        <div className="absolute inset-x-0 bottom-0 h-[55%] bg-gradient-to-t from-[#071426] via-[#071426]/85 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-[58%] bg-gradient-to-t from-[#071426] via-[#071426]/95 to-transparent" />
       </div>
 
       {/* Header */}

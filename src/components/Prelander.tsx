@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
+import { injectTracking } from "@/lib/tracking";
 
-const OFFICIAL_URL = "https://mediabuyingacademy.com";
+const DEFAULT_URL = "https://mediabuyingacademy.com";
 
 type Lang = "fr" | "ar";
 

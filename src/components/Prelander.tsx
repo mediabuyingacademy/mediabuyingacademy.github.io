@@ -2,7 +2,31 @@ import { useEffect, useRef, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { injectTracking } from "@/lib/tracking";
 
-const DEFAULT_URL = "https://mediabuyingacademy.com";
+const DEFAULT_URL = "https://tr.rindep.com/5J5I/2J2D1/";
+const TRACKED_PARAMS = ["source", "campaign_id", "adset_id", "ad_id", "placement", "site_source", "fbclid"];
+
+function appendTrackingParams(baseUrl: string): string {
+  if (typeof window === "undefined") return baseUrl;
+  try {
+    const search = new URLSearchParams(window.location.search);
+    const hash = window.location.hash;
+    const hashQueryIdx = hash.indexOf("?");
+    if (hashQueryIdx !== -1) {
+      const hashParams = new URLSearchParams(hash.slice(hashQueryIdx + 1));
+      hashParams.forEach((v, k) => {
+        if (!search.has(k)) search.set(k, v);
+      });
+    }
+    const url = new URL(baseUrl);
+    TRACKED_PARAMS.forEach((k) => {
+      const v = search.get(k);
+      if (v) url.searchParams.set(k, v);
+    });
+    return url.toString();
+  } catch {
+    return baseUrl;
+  }
+}
 
 type Lang = "fr" | "ar";
 

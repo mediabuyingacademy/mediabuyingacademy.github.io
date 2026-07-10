@@ -284,7 +284,7 @@ export default function Prelander() {
 
           <div className="mt-5 flex flex-col items-center sm:mt-7 lg:items-center">
             <a
-              href={ctaUrl}
+              href={appendTrackingParams(ctaUrl)}
               target="_blank"
               rel="noopener noreferrer"
               className="cta-btn group cta-pulse lg:cta-pulse-strong relative inline-flex w-full items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-r from-[#2EA3FF] via-[#3DB2FF] to-[#5BC0FF] px-6 py-4 text-base font-bold text-white sm:w-auto sm:px-9 sm:py-5 sm:text-lg lg:px-14 lg:py-7 lg:text-2xl lg:tracking-[0.12em] lg:font-black lg:text-black"
